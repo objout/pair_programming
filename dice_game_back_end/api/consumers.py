@@ -154,6 +154,10 @@ class GameConsumer(WebsocketConsumer):
             else:
                 self.game_driver.curRound = 0
                 self.game_driver.curInning += 1
+
+        if self.game_driver.curRound == self.game_driver.rounds:
+            self.game_driver.turn = int(not turn)
+
         return True
 
     def sendMsg(self, event):
