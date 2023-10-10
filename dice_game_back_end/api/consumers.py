@@ -156,6 +156,7 @@ class GameConsumer(WebsocketConsumer):
                 self.game_driver.curInning += 1
 
         if self.game_driver.curRound == self.game_driver.rounds:
+            self.game_driver.players[id].lockDice([0, 1, 2, 3, 4])
             self.game_driver.turn = int(not turn)
 
         return True
