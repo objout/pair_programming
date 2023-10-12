@@ -1,0 +1,40 @@
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: #f0f0f0;
+}
+.title {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.game-board {
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.game-info {
+	margin-bottom: 20px;
+}
+.btn {
+	margin: 10px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+.game-board {
+	display: flex;
+	justify-content: space-between;
+}
+.player-dices.left {
+	margin-right: 10px;
+}
+.player-dices.right {
+	margin-left: 10px;
+}
+

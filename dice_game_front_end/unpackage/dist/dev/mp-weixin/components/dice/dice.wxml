@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['toggleLock',['$event']]]]]}}" class="dice-container" bindtap="__e"><image class="dice-image" src="{{diceImage}}"></image><block wx:if="{{locked}}"><text class="locked">🔒</text></block></view>
