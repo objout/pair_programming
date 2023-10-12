@@ -11,7 +11,7 @@
             :key="n"
             :value="player1.dices[n-1]"
             :locked="player1.lockStatus[n-1]"
-            @update:locked="lockThisDice(player1.id, n-1, $event)"
+            @locked="lockThisDice(player1.id, n-1, $event)"
           ></dice>
         </view>
 
@@ -35,7 +35,7 @@
             :key="n"
             :value="player2.dices[n-1]"
             :locked="player2.lockStatus[n-1]"
-            @update:locked="lockThisDice(player2.id, n-1, $event)"
+            @locked="lockThisDice(player2.id, n-1, $event)"
           ></dice>
         </view>
 
@@ -280,6 +280,7 @@ export default {
     },
 
     lockThisDice(id, index, status) {
+      console.log(id, index, status);
       if (this.id != id) {
         return ;
       }
